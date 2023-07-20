@@ -8,59 +8,78 @@
 import SwiftUI
 
 struct ContentView: View {
-    @Environment(\.managedObjectContext) var context
-    @State private var showNewTask = false
-    @FetchRequest(
-        entity: ToDo.entity(), sortDescriptors: [ NSSortDescriptor(keyPath: \ToDo.id, ascending: false) ])
-    
-    var toDoItems: FetchedResults<ToDo>
-    
     var body: some View {
-        VStack {
-            HStack {
-                Text("To Do List")
-                    .font(.system(size: 40))
-                    .fontWeight(.black)
+       
+        
+        NavigationStack {
+            ZStack {
+                Color("NewTan")
+                    .ignoresSafeArea()
                 
-                Spacer()
-                Button(action: {
-                    self.showNewTask = true
+                VStack {
+                    HStack {
+                  
+                        NavigationLink(destination: Profile()){
+                            Text("👤 Profile")
+                                .font(.title2)
+                                .fontWeight(.black)
+                                .foregroundColor(Color("DarkBlue"))
+                        }
+                        .padding(.leading, 80) // Add padding to the left side
+                        Spacer() // Push the link to the left side
+                        
+                        NavigationLink(destination: Shopping()){
+                            Text("🛍️ Shopping List")
+                                .font(.title2)
+                                .fontWeight(.black)
+                                .foregroundColor(Color("DarkBlue"))
+                        }
+                        .padding(.trailing, 10) // Add padding to the left side
+                        Spacer() // Push the link to the left side
+                        
+                    }//hstack
                     
-                }) {
-                    Text("+")
-                }
-            }
-            .padding()
-            Spacer()
-            List {
-                ForEach (toDoItems) { toDoItem in
-                    if toDoItem.isImportant == true {
-                        Text("‼️" + (toDoItem.title ?? "No title"))
-                    } else {
-                        Text(toDoItem.title ?? "No title")
-                    }
-                }
-                .onDelete(perform: deleteTask)
-            }
-            .listStyle(.plain)
-        }
-        if showNewTask {
-                NewToDoView(showNewTask: $showNewTask, title: "", isImportant: false)
-                    }
-        }
-    private func deleteTask(offsets: IndexSet) {
-            withAnimation {
-                offsets.map { toDoItems[$0] }.forEach(context.delete)
+                    Spacer() // Push the above HStack to the top
 
-                do {
-                    try context.save()
-                } catch {
-                    print(error)
-                }
-            }
-        }
+                    Image("title")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                    Image("Sunny")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .padding(.top, 8.0)
+                        .frame(width:350,height:350)
+                   
+                        
+                  
+                    
+                    NavigationLink(destination: FashionReport()){
+                        Text("Fashion Report")
+                            .font(.title)
+                            .fontWeight(.black)
+                            .foregroundColor(Color("LightYellow"))
+                            .padding(2)
+                        
+                            
+                    }
+                    .buttonStyle(.borderedProminent)
+                    .padding(.top, 60.0)
+                    .tint(Color("DarkBlue"))
+                    .frame(width:500, height:100)
+                    
+                    Spacer() // Provide space at the bottom
+                    
+                    Text("for your best OOTD")
+                        .fontWeight(.heavy)
+                        .foregroundColor(Color("DarkBlue"))
+               
+
+                }//vstack
+            }//zstack
+        }//navstack
     }
-    
+}
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()

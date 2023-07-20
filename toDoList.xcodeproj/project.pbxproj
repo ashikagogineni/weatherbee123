@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A421E4E2A68D355004436E4 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A421E4D2A68D355004436E4 /* Profile.swift */; };
+		2A421E502A68D43D004436E4 /* FashionReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A421E4F2A68D43D004436E4 /* FashionReport.swift */; };
+		2A421E522A68DA96004436E4 /* Shopping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A421E512A68DA96004436E4 /* Shopping.swift */; };
+		2A421E542A68DBD4004436E4 /* NewToDoView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A421E532A68DBD4004436E4 /* NewToDoView2.swift */; };
+		2A421E562A68DD04004436E4 /* toDoListApp2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A421E552A68DD04004436E4 /* toDoListApp2.swift */; };
+		2A421E582A68DD2A004436E4 /* ToDoItem2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A421E572A68DD2A004436E4 /* ToDoItem2.swift */; };
 		BDFD527E2A6728DF0062E024 /* toDoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFD527D2A6728DF0062E024 /* toDoListApp.swift */; };
 		BDFD52802A6728DF0062E024 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFD527F2A6728DF0062E024 /* ContentView.swift */; };
 		BDFD52822A6728E00062E024 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDFD52812A6728E00062E024 /* Assets.xcassets */; };
@@ -18,6 +24,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A421E4D2A68D355004436E4 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		2A421E4F2A68D43D004436E4 /* FashionReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FashionReport.swift; sourceTree = "<group>"; };
+		2A421E512A68DA96004436E4 /* Shopping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shopping.swift; sourceTree = "<group>"; };
+		2A421E532A68DBD4004436E4 /* NewToDoView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewToDoView2.swift; sourceTree = "<group>"; };
+		2A421E552A68DD04004436E4 /* toDoListApp2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = toDoListApp2.swift; sourceTree = "<group>"; };
+		2A421E572A68DD2A004436E4 /* ToDoItem2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem2.swift; sourceTree = "<group>"; };
 		BDFD527A2A6728DF0062E024 /* toDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = toDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDFD527D2A6728DF0062E024 /* toDoListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = toDoListApp.swift; sourceTree = "<group>"; };
 		BDFD527F2A6728DF0062E024 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,10 +71,16 @@
 		BDFD527C2A6728DF0062E024 /* toDoList */ = {
 			isa = PBXGroup;
 			children = (
+				BDFD527F2A6728DF0062E024 /* ContentView.swift */,
+				2A421E4D2A68D355004436E4 /* Profile.swift */,
+				BDFD528D2A672B3F0062E024 /* NewToDoView.swift */,
 				BDFD527D2A6728DF0062E024 /* toDoListApp.swift */,
 				BDFD528B2A67294C0062E024 /* ToDoItem.swift */,
-				BDFD527F2A6728DF0062E024 /* ContentView.swift */,
-				BDFD528D2A672B3F0062E024 /* NewToDoView.swift */,
+				2A421E512A68DA96004436E4 /* Shopping.swift */,
+				2A421E532A68DBD4004436E4 /* NewToDoView2.swift */,
+				2A421E552A68DD04004436E4 /* toDoListApp2.swift */,
+				2A421E572A68DD2A004436E4 /* ToDoItem2.swift */,
+				2A421E4F2A68D43D004436E4 /* FashionReport.swift */,
 				BDFD52812A6728E00062E024 /* Assets.xcassets */,
 				BDFD52832A6728E00062E024 /* Preview Content */,
 			);
@@ -150,8 +168,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDFD52802A6728DF0062E024 /* ContentView.swift in Sources */,
+				2A421E562A68DD04004436E4 /* toDoListApp2.swift in Sources */,
+				2A421E522A68DA96004436E4 /* Shopping.swift in Sources */,
 				BDFD52932A6737B90062E024 /* toDoList.xcdatamodeld in Sources */,
+				2A421E502A68D43D004436E4 /* FashionReport.swift in Sources */,
+				2A421E582A68DD2A004436E4 /* ToDoItem2.swift in Sources */,
+				2A421E542A68DBD4004436E4 /* NewToDoView2.swift in Sources */,
 				BDFD527E2A6728DF0062E024 /* toDoListApp.swift in Sources */,
+				2A421E4E2A68D355004436E4 /* Profile.swift in Sources */,
 				BDFD528C2A67294C0062E024 /* ToDoItem.swift in Sources */,
 				BDFD528E2A672B3F0062E024 /* NewToDoView.swift in Sources */,
 				BDFD52902A6736080062E024 /* Persistence.swift in Sources */,

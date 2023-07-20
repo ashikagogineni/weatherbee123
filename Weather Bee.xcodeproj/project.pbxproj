@@ -13,6 +13,8 @@
 		2A421E542A68DBD4004436E4 /* NewToDoView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A421E532A68DBD4004436E4 /* NewToDoView2.swift */; };
 		2A421E562A68DD04004436E4 /* toDoListApp2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A421E552A68DD04004436E4 /* toDoListApp2.swift */; };
 		2A421E582A68DD2A004436E4 /* ToDoItem2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A421E572A68DD2A004436E4 /* ToDoItem2.swift */; };
+		BD1783742A69CB0A00AE434A /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1783732A69CB0A00AE434A /* Search.swift */; };
+		BDA6FA732A69B9DA00F762AA /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA6FA722A69B9DA00F762AA /* About.swift */; };
 		BDFD527E2A6728DF0062E024 /* toDoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFD527D2A6728DF0062E024 /* toDoListApp.swift */; };
 		BDFD52802A6728DF0062E024 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFD527F2A6728DF0062E024 /* ContentView.swift */; };
 		BDFD52822A6728E00062E024 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDFD52812A6728E00062E024 /* Assets.xcassets */; };
@@ -30,7 +32,9 @@
 		2A421E532A68DBD4004436E4 /* NewToDoView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewToDoView2.swift; sourceTree = "<group>"; };
 		2A421E552A68DD04004436E4 /* toDoListApp2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = toDoListApp2.swift; sourceTree = "<group>"; };
 		2A421E572A68DD2A004436E4 /* ToDoItem2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem2.swift; sourceTree = "<group>"; };
-		BDFD527A2A6728DF0062E024 /* toDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = toDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD1783732A69CB0A00AE434A /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
+		BDA6FA722A69B9DA00F762AA /* About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
+		BDFD527A2A6728DF0062E024 /* Weather Bee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Weather Bee.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDFD527D2A6728DF0062E024 /* toDoListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = toDoListApp.swift; sourceTree = "<group>"; };
 		BDFD527F2A6728DF0062E024 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BDFD52812A6728E00062E024 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -63,7 +67,7 @@
 		BDFD527B2A6728DF0062E024 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BDFD527A2A6728DF0062E024 /* toDoList.app */,
+				BDFD527A2A6728DF0062E024 /* Weather Bee.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				BDFD527F2A6728DF0062E024 /* ContentView.swift */,
+				BDA6FA722A69B9DA00F762AA /* About.swift */,
 				2A421E4D2A68D355004436E4 /* Profile.swift */,
 				BDFD528D2A672B3F0062E024 /* NewToDoView.swift */,
 				BDFD527D2A6728DF0062E024 /* toDoListApp.swift */,
@@ -81,6 +86,7 @@
 				2A421E552A68DD04004436E4 /* toDoListApp2.swift */,
 				2A421E572A68DD2A004436E4 /* ToDoItem2.swift */,
 				2A421E4F2A68D43D004436E4 /* FashionReport.swift */,
+				BD1783732A69CB0A00AE434A /* Search.swift */,
 				BDFD52812A6728E00062E024 /* Assets.xcassets */,
 				BDFD52832A6728E00062E024 /* Preview Content */,
 			);
@@ -100,9 +106,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BDFD52792A6728DF0062E024 /* toDoList */ = {
+		BDFD52792A6728DF0062E024 /* Weather Bee */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BDFD52882A6728E00062E024 /* Build configuration list for PBXNativeTarget "toDoList" */;
+			buildConfigurationList = BDFD52882A6728E00062E024 /* Build configuration list for PBXNativeTarget "Weather Bee" */;
 			buildPhases = (
 				BDFD52762A6728DF0062E024 /* Sources */,
 				BDFD52772A6728DF0062E024 /* Frameworks */,
@@ -112,9 +118,9 @@
 			);
 			dependencies = (
 			);
-			name = toDoList;
+			name = "Weather Bee";
 			productName = toDoList;
-			productReference = BDFD527A2A6728DF0062E024 /* toDoList.app */;
+			productReference = BDFD527A2A6728DF0062E024 /* Weather Bee.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -132,7 +138,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BDFD52752A6728DF0062E024 /* Build configuration list for PBXProject "toDoList" */;
+			buildConfigurationList = BDFD52752A6728DF0062E024 /* Build configuration list for PBXProject "Weather Bee" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -145,7 +151,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BDFD52792A6728DF0062E024 /* toDoList */,
+				BDFD52792A6728DF0062E024 /* Weather Bee */,
 			);
 		};
 /* End PBXProject section */
@@ -171,6 +177,7 @@
 				2A421E562A68DD04004436E4 /* toDoListApp2.swift in Sources */,
 				2A421E522A68DA96004436E4 /* Shopping.swift in Sources */,
 				BDFD52932A6737B90062E024 /* toDoList.xcdatamodeld in Sources */,
+				BDA6FA732A69B9DA00F762AA /* About.swift in Sources */,
 				2A421E502A68D43D004436E4 /* FashionReport.swift in Sources */,
 				2A421E582A68DD2A004436E4 /* ToDoItem2.swift in Sources */,
 				2A421E542A68DBD4004436E4 /* NewToDoView2.swift in Sources */,
@@ -179,6 +186,7 @@
 				BDFD528C2A67294C0062E024 /* ToDoItem.swift in Sources */,
 				BDFD528E2A672B3F0062E024 /* NewToDoView.swift in Sources */,
 				BDFD52902A6736080062E024 /* Persistence.swift in Sources */,
+				BD1783742A69CB0A00AE434A /* Search.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,7 +366,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BDFD52752A6728DF0062E024 /* Build configuration list for PBXProject "toDoList" */ = {
+		BDFD52752A6728DF0062E024 /* Build configuration list for PBXProject "Weather Bee" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BDFD52862A6728E00062E024 /* Debug */,
@@ -367,7 +375,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BDFD52882A6728E00062E024 /* Build configuration list for PBXNativeTarget "toDoList" */ = {
+		BDFD52882A6728E00062E024 /* Build configuration list for PBXNativeTarget "Weather Bee" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BDFD52892A6728E00062E024 /* Debug */,

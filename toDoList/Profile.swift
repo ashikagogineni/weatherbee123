@@ -1,5 +1,5 @@
 //
-//  Shopping.swift
+//  Profile.swift
 //  toDoList
 //
 //  Created by Ashika on 7/19/23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Shopping: View {
+struct Profile: View {
     @Environment(\.managedObjectContext) var context
     @State private var showNewTask = false
     @FetchRequest(
@@ -16,18 +16,12 @@ struct Shopping: View {
     var toDoItems: FetchedResults<ToDo>
     
     var body: some View {
-        
-        
-        
         ZStack{
             Color("NewTan")
                 .ignoresSafeArea()
-            
-            
-            
             VStack {
                 HStack {
-                    Image("shoppingImage")
+                    Image("profileImage")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                     
@@ -36,8 +30,8 @@ struct Shopping: View {
                         self.showNewTask = true
                         
                     }) {
-                        Text("Add new item")
-                            .foregroundColor(Color("DarkBlue"))
+                        Text("Create new profile")
+                        .foregroundColor(Color("DarkBlue"))
                     }
                 }
                 .padding()
@@ -45,15 +39,18 @@ struct Shopping: View {
                 List {
                     ForEach (toDoItems) { toDoItem in
                         if toDoItem.isImportant == true {
-                            let profileString = (toDoItem.item ?? "No item") + " \nStore: " + (toDoItem.store ?? "Unknown")
-                            Text(profileString + " \nStyle: " + (toDoItem.price ?? "Unknown"))
+                            let profileString = (toDoItem.title ?? "No name") + " \nAge: " + (toDoItem.age ?? "Unknown")
+                            Text(profileString + " \nStyle: " + (toDoItem.style ?? "Unknown"))
                         } else {
-                            let profileString2 = "‼️‼️\n" + (toDoItem.item ?? "No item") + " \nStore: " + (toDoItem.store ?? "Unknown")
-                            Text(profileString2 + " \n$" + (toDoItem.price ?? "Unknown"))
+                            Text("User information not saved")
                         }
                     }
                     .onDelete(perform: deleteTask)
                 }
+                .listRowBackground(Color("NewTan"))
+//                .background(Color("NewTan"))
+//                    .ignoresSafeArea()
+                
                 HStack{
                        NavigationLink(destination:ContentView()) {
                          Image("home")
@@ -87,19 +84,15 @@ struct Shopping: View {
                     }
                      }//Hstack
             }
-            
-            
-            
-            
             if showNewTask {
-                NewToDoView2(showNewTask: $showNewTask, item: "", store: "", price: "", isImportant2: false)
+                NewToDoView(showNewTask: $showNewTask, title: "", age: "", style: "", isImportant: false)
             }
         }
     }
-        private func deleteTask(offsets: IndexSet) {
+    private func deleteTask(offsets: IndexSet) {
             withAnimation {
                 offsets.map { toDoItems[$0] }.forEach(context.delete)
-                
+
                 do {
                     try context.save()
                 } catch {
@@ -108,10 +101,9 @@ struct Shopping: View {
             }
         }
     }
-
-    struct Shopping_Previews: PreviewProvider {
-        static var previews: some View {
-            Shopping()
-        }
+    
+struct Profile_Previews: PreviewProvider {
+    static var previews: some View {
+        Profile()
     }
-
+}

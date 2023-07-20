@@ -50,7 +50,10 @@ struct NewToDoView: View {
             }
             .padding()
         }
+        .background(Color("NewTan"))
+            
     }
+    
     private func addTask(title: String, age: String, style: String, isImportant: Bool = false) {
         let task = ToDo(context: context)
         task.id = UUID()
@@ -64,7 +67,8 @@ struct NewToDoView: View {
         } catch {
             print(error)
         }
-        }
+    }
+        
 }
 
 struct NewToDoView_Previews: PreviewProvider {

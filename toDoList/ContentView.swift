@@ -48,7 +48,7 @@ struct ContentView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .padding(.top, 8.0)
-                        .frame(width:350,height:350)
+                        .frame(width:350,height:155)
                    
                         
                   
@@ -69,9 +69,28 @@ struct ContentView: View {
                     
                     Spacer() // Provide space at the bottom
                     
-                    Text("for your best OOTD")
+                    Text(".·:*¨༺ for your best OOTD ༻¨*:·.")
                         .fontWeight(.heavy)
                         .foregroundColor(Color("DarkBlue"))
+                                        
+                    NavigationLink(destination: About()){
+                        Text("About the App")
+                        .font(.title)
+                        .fontWeight(.black)
+                        .foregroundColor(Color("LightYellow"))
+                        .padding(2)
+                                        }
+                        .buttonStyle(.borderedProminent)
+                        .padding(.top, 60.0)
+                        .tint(Color("Red"))
+                        .frame(width:500, height:100)
+                                        
+                        Spacer() // Provide space at the bottom
+                                        
+                        Text("•,¸,.·' for more about Weather Bee '·.,¸,•")
+                        .fontWeight(.heavy)
+                        .foregroundColor(Color("Red"))
+
                
 
                 }//vstack

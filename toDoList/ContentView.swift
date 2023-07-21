@@ -24,6 +24,7 @@ struct ContentView: View {
                                 .font(.title2)
                                 .fontWeight(.black)
                                 .foregroundColor(Color("DarkBlue"))
+                            Text("hello")
                         }
                         .padding(.leading, 80) // Add padding to the left side
                         Spacer() // Push the link to the left side
